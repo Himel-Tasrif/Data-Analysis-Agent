@@ -14,8 +14,6 @@ client = OpenAI(
     api_key=api_key
 )
 
-
-
 # ------------------  QueryUnderstandingTool ---------------------------
 def QueryUnderstandingTool(query: str) -> bool:
     """Return True if the query seems to request a visualisation based on keywords."""
@@ -249,7 +247,8 @@ def main():
     with left:
         st.header("Data Analysis Agent")
         st.markdown("###       -- Tasrif Nur Himel")
-        st.markdown("<medium>Powered by <a href='https://build.nvidia.com/nvidia/llama-3_1-nemotron-ultra-253b-v1'>NVIDIA Llama-3.1-Nemotron-Ultra-253B-v1</a></medium>", unsafe_allow_html=True)
+        #st.markdown("<medium>Powered by <a href='https://build.nvidia.com/nvidia/llama-3_1-nemotron-ultra-253b-v1'>NVIDIA Llama-3.1-Nemotron-Ultra-253B-v1</a></medium>", unsafe_allow_html=True)
+        st.markdown("Powered by [Llama-3.1-Nemotron-Ultra-253B-v1] ")
         file = st.file_uploader("Choose CSV", type=["csv"])
         if file:
             if ("df" not in st.session_state) or (st.session_state.get("current_file") != file.name):
