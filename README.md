@@ -59,12 +59,12 @@ The implementation leverages the powerful Llama-3.1-Nemotron-Ultra-253B-v1 model
 
 1. Run the Streamlit app:
    ```bash
-   streamlit run data_analysis.py
+   streamlit run agent.py
    ```
 
 2. Download example dataset (optional):
    ```bash
-   wget https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv
+   wget https://github.com/Himel-Tasrif/Machine-Learning/blob/main/scikit-learn%20Models/titanic.csv
    ```
 
 3. Use the application:
@@ -74,7 +74,7 @@ The implementation leverages the powerful Llama-3.1-Nemotron-Ultra-253B-v1 model
 
 ## Example
 
-![App Demo](./assets/data_analysis_agent_demo.png)
+![App Demo](./assets/himel.png)
 
 ## Model Details
 
