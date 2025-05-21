@@ -12,7 +12,6 @@ This repository contains a Streamlit application that demonstrates a complete wo
 
 The implementation leverages the powerful Llama-3.1-Nemotron-Ultra-253B-v1 model through NVIDIA's API, enabling sophisticated data analysis and reasoning.
 
-
 ## Features
 
 - **Agentic Architecture**: Modular agents for data insight, code generation, execution, and reasoning
