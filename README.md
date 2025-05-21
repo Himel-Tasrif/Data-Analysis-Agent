@@ -37,8 +37,8 @@ The implementation leverages the powerful Llama-3.1-Nemotron-Ultra-253B-v1 model
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/NVIDIA/GenerativeAIExamples.git
-   cd GenerativeAIExamples/community/data-analysis-agent
+   git clone https://github.com/Himel-Tasrif/Data-Analysis-Agent.git
+   cd Data-Analysis-Agent
    ```
 
 2. Install dependencies:
