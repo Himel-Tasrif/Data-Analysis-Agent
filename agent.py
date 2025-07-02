@@ -249,7 +249,7 @@ def main():
         st.markdown("###       -- Tasrif Nur Himel")
         #st.markdown("<medium>Powered by <a href='https://build.nvidia.com/nvidia/llama-3_1-nemotron-ultra-253b-v1'>NVIDIA Llama-3.1-Nemotron-Ultra-253B-v1</a></medium>", unsafe_allow_html=True)
         st.markdown("Powered by [Llama-3.1-Nemotron-Ultra-253B-v1] ")
-        file = st.file_uploader("Choose CSV", type=["csv"])
+        file = st.file_uploader("Choose CSV file or Excel", type=["csv", "xlsx"])
         if file:
             if ("df" not in st.session_state) or (st.session_state.get("current_file") != file.name):
                 if file.name.endswith(".csv"):
