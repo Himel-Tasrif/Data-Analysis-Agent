@@ -257,7 +257,7 @@ def main():
                 st.session_state.messages = []
                 with st.spinner("Generating dataset insights …"):
                     st.session_state.insights = DataInsightAgent(st.session_state.df)
-            st.dataframe(st.session_state.df.head())
+            st.dataframe(st.session_state.df)
             st.markdown("### Dataset Insights")
             st.markdown(st.session_state.insights)
         else:
