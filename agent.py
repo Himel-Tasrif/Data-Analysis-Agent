@@ -255,6 +255,11 @@ def main():
                 if file.name.endswith(".csv"):
                     st.session_state.df = pd.read_csv(file)
                 #st.session_state.df = pd.read_csv(file)
+                elif file.name.endswith(".xlsx"):
+                    st.session_state.df = pd.read_excel(file)
+                else:
+                    st.error("Unsupported file format. Please upload a CSV or Excel file.")
+                    return
                 st.session_state.current_file = file.name
                 st.session_state.messages = []
                 with st.spinner("Generating dataset insights …"):
