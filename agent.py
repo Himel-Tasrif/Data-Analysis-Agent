@@ -252,7 +252,9 @@ def main():
         file = st.file_uploader("Choose CSV", type=["csv"])
         if file:
             if ("df" not in st.session_state) or (st.session_state.get("current_file") != file.name):
-                st.session_state.df = pd.read_csv(file)
+                if file.name.endswith(".csv"):
+                    st.session_state.df = pd.read_csv(file)
+                #st.session_state.df = pd.read_csv(file)
                 st.session_state.current_file = file.name
                 st.session_state.messages = []
                 with st.spinner("Generating dataset insights …"):
